@@ -1,0 +1,90 @@
+@import '../css/mixin';
+header {
+    background-color: #fff;    
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+
+    .navbar {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+        // border: 1px solid;
+
+        .logo {
+            font-size: 26px;
+            font-weight: 700;
+
+            a {
+                color: green;
+            }
+        }
+
+        .menu-bar {
+            display: flex;
+            align-items: center;
+
+            .menu {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+
+                li {
+                    position: relative;
+                    padding: 15px 10px;
+                    text-transform: uppercase;
+                    font-size: 13px;
+                    font-weight: 500;                                        
+                    &.active{
+                        a{
+                            color: green;
+                        }
+                    }
+                    a {
+                        color: black;
+                    }
+
+                    .submenu {
+                        position: absolute;
+                        top: 45px;
+                        left: 0;
+                        background: #fff;
+                        display: none;
+                        width: 150px;
+                        box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.1);
+
+                        li {
+                            padding: 10px;
+                            border-bottom: 1px solid #d7cdcd;
+                        }
+
+                        &::before {
+                            content: "";
+                            height: 15px;
+                            width: 15px;
+                            transform: translateX(-50%) translateY(-3px) rotateZ(314deg);
+                            background-color: #fff;
+                            position: absolute;
+                            top: -6px;
+                            left: 25px;
+                            border-top: 1px solid #EAEDF2;
+                            border-right: 1px solid #EAEDF2;
+                        }
+                    }
+
+                    &:hover {
+                        .submenu {
+                            display: unset;
+                        }
+                    }
+
+                    &.menu-icon {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

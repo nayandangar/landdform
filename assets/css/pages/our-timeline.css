@@ -1,0 +1,134 @@
+.timeline-sec {
+  padding: 100px 0;
+}
+.timeline-sec .timeline {
+  position: relative;
+  width: 860px;
+  margin: 0 auto;
+  padding: 4.5rem 0;
+}
+.timeline-sec .timeline:before {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  content: " ";
+  display: block;
+  width: 6px;
+  height: 100%;
+  margin-left: -3px;
+  background: #dcefdc;
+  z-index: -1;
+}
+.timeline-sec .timeline li {
+  padding: 1em 0;
+}
+.timeline-sec .timeline li:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.timeline-sec .timeline li .desc {
+  color: #59626A;
+  font-size: 15px;
+  line-height: 25px;
+  margin-top: 15px;
+}
+.timeline-sec .timeline li .left {
+  width: 400px;
+  float: left;
+  position: relative;
+  text-align: right;
+}
+.timeline-sec .timeline li .left .block {
+  margin-right: 8px;
+}
+.timeline-sec .timeline li .left::before {
+  content: "";
+  height: 12px;
+  width: 12px;
+  border: 4px solid green;
+  position: absolute;
+  border-radius: 50%;
+  margin-left: 20px;
+  top: 10px;
+}
+.timeline-sec .timeline li .left .flag {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: row-reverse;
+}
+.timeline-sec .timeline li .left .flag h4 {
+  background-color: #000;
+  padding: 6px 10px;
+  display: inline;
+  color: #fff;
+  font-size: 20px;
+  position: relative;
+}
+.timeline-sec .timeline li .left .flag h4:after {
+  content: "";
+  height: 15px;
+  width: 15px;
+  background-color: #000;
+  position: absolute;
+  right: -8px;
+  transform: rotate(45deg);
+  top: 11px;
+  z-index: -1;
+}
+.timeline-sec .timeline li .left .flag span {
+  background-color: #dcefdc;
+  color: green;
+  font-size: 12px;
+  padding: 5px;
+}
+.timeline-sec .timeline li .right {
+  position: relative;
+  width: 400px;
+  float: right;
+}
+.timeline-sec .timeline li .right .block {
+  margin-left: 8px;
+}
+.timeline-sec .timeline li .right::before {
+  content: "";
+  height: 12px;
+  width: 12px;
+  border: 4px solid green;
+  position: absolute;
+  border-radius: 50%;
+  left: -40px;
+  top: 10px;
+}
+.timeline-sec .timeline li .right .flag {
+  display: flex;
+  align-items: center;
+}
+.timeline-sec .timeline li .right .flag h4 {
+  background-color: #000;
+  padding: 6px 10px;
+  display: inline;
+  color: #fff;
+  font-size: 20px;
+  position: relative;
+}
+.timeline-sec .timeline li .right .flag h4:before {
+  content: "";
+  height: 15px;
+  width: 15px;
+  background-color: #000;
+  position: absolute;
+  left: -8px;
+  transform: rotate(45deg);
+  top: 11px;
+  z-index: -1;
+}
+.timeline-sec .timeline li .right .flag span {
+  background-color: #dcefdc;
+  color: green;
+  font-size: 12px;
+  padding: 5px;
+}/*# sourceMappingURL=our-timeline.css.map */

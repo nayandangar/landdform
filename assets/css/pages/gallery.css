@@ -1,0 +1,6 @@
+.gallery-GridBoxes {
+  padding: 100px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}/*# sourceMappingURL=gallery.css.map */

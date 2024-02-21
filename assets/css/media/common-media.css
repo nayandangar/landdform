@@ -1,0 +1,24 @@
+@media (max-width: 456px) {
+  .early-contact-Sec .left-side h3.title {
+    font-size: 25px !important;
+  }
+  .early-contact-Sec .right-side {
+    flex-direction: column;
+    align-items: baseline !important;
+    gap: 5px !important;
+  }
+}
+@media (max-width: 536px) {
+  .expert-team .GridBoxes .gridBox {
+    grid-template-columns: 1fr !important;
+  }
+  .expert-team .GridBoxes .gridBox .content .position {
+    padding-bottom: 5px !important;
+  }
+  .expert-team .GridBoxes .gridBox table td {
+    padding: 5px 0 !important;
+  }
+  .expert-team .GridBoxes .gridBox .social {
+    padding-top: 25px !important;
+  }
+}/*# sourceMappingURL=common-media.css.map */

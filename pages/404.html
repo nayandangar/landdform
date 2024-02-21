@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/images/fav-icon.png" type="image/x-icon">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url(../assets/images/page-banner.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;   
+            position: relative; 
+            z-index: 1;
+            display: flex;
+            align-items: center;
+        }
+        body::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: black;
+            opacity: 0.6;
+            z-index: -1;
+        }
+        h1{
+            font-size: 140px;
+            color: #fff;
+            line-height: 120px;
+            margin-bottom: 10px;
+        }
+        p{
+            color: #fff;
+            font-size: 20px;
+            letter-spacing: 1.5px;
+            font-weight: 100;
+            margin-bottom: 30px;
+        }
+        form{
+            display: flex;
+            border: 2px solid #fff;            
+            padding: 5px;
+            border-radius: 50px;
+            height: 55px;
+            width: 500px;            
+        }
+        form input{
+            background-color: transparent;
+            border: none;
+            width: 100%;
+            padding: 0 20px;
+        }
+        form button{
+            padding:0 40px;
+            border-radius: 50px;
+            border: none;
+            font-size: 16px;
+            color: green;
+
+        }
+        .social{
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .social-icon{
+            border: 2px solid #fff;
+            border-radius: 50%;
+            height: 35px;
+            width: 35px;
+            display: grid;
+            place-content: center;
+        }
+        .social-icon a{
+            color: white;
+            font-size: 12px;
+        }
+        .back-to-home{
+            padding-bottom: 15px;
+            border-bottom: 1px solid #fff;
+            margin-top: 50px;
+            display: inline-block;
+        }
+        .back-to-home a{
+            color: #fff;
+            font-size: 12px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="container error_404">
+        <h1>404</h1>
+        <p>Oops! Page Not Found</p>
+        <form action="#">            
+            <input type="text"  placeholder="Search Here">
+            <button><span class="fas fa-search"></span></button>            
+        </form>
+        <div class="social">
+            <div class="social-icon"><a href="#"><span class="fab fa-facebook-f"></span></a></div>
+            <div class="social-icon"><a href="#"><span class="fab fa-twitter"></span></a></div>
+            <div class="social-icon"><a href="#"><span class="fab fa-google-plus-g"></span></a></div>
+            <div class="social-icon"><a href="#"><span class="fab fab fa-linkedin-in"></span></a></div>
+        </div>
+        <div class="back-to-home">
+            <a href="../index.html">Home Overview <span class="fa-solid fas fa-angle-double-right"></span></a>
+        </div>
+    </div>
+</body>
+</html>

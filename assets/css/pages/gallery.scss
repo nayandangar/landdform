@@ -1,0 +1,6 @@
+@import '../mixin';
+.gallery-GridBoxes{
+    padding: 100px 0;
+    @include gridBox(3);
+    gap: 30px;
+}

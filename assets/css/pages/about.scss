@@ -1,0 +1,244 @@
+@import '../mixin';
+
+.about-us {
+    padding: 100px 0;
+
+    .heading {
+        text-align: center;
+    }
+
+    .desc {
+        width: 65%;
+        text-align: center;
+        margin: 0 auto;
+        line-height: 28px;
+        margin-top: 20px;
+    }
+
+    .gridBoxs {
+        @include gridBox(2);
+        padding: 50px 15px 0;
+        gap: 20px;
+
+        .gridBox {
+            position: relative;
+            z-index: 1;
+
+            &::before {
+                content: '';
+                background-color: #0D250E;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                z-index: 2;
+                opacity: 0;
+
+            }
+
+            &::after {
+                content: '';
+                background-color: #000;
+                position: absolute;
+                opacity: 0.6;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                z-index: 1;
+
+            }
+
+            .image {
+                img {
+                    height: auto;
+                    max-width: 100%;
+                    vertical-align: middle;
+                }
+            }
+
+            .content {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                z-index: 3;
+                display: grid;
+                place-content: center;
+                text-align: center;
+                padding: 50px 30px;
+                color: #fff;
+
+                h3 {
+                    font-size: 32px;
+                }
+
+                p {
+                    padding-top: 20px;
+                    max-width: 327px;
+                    margin: auto;
+                    line-height: 30px;
+                }
+            }
+
+            &:hover {
+                &::before {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.what-we-offer {
+    @include gridBox(2);
+    align-items: center;
+    max-width: 1519px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .left-side {
+        background-image: url(../../images/page-banner.jpg);
+        padding: 15em 4em;
+        color: #fff;
+        position: relative;
+        z-index: 0;
+
+        &::before {
+            content: '';
+            background-color: #000;
+            opacity: 0.6;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            position: absolute;
+            z-index: -1;
+        }
+
+        h5 {
+            font-size: 42px;
+        }
+
+        h2 {
+            font-size: 45px;
+        }
+    }
+
+    .right-side {
+        height: 100%;
+        display: flex;
+        background-color: #F2FBF2;
+        padding: 0 4em;
+
+        .gridBoxs {
+            @include gridBox(2);
+            gap: 30px;
+            width: 100%;
+            margin: auto 0;
+
+            .icon {
+                font-size: 35px;
+                color: #2a7d2e;
+            }
+
+            .number {
+                padding-top: 10px;
+                font-size: 34px;
+                color: #323b43
+            }
+
+            .text {
+                color: gray;
+
+                padding-top: 12px;
+                line-height: 27px;
+            }
+        }
+    }
+}
+
+.expert-team {
+    padding: 100px 30px;
+
+    .heading {
+        text-align: center;
+    }
+
+    .GridBoxes {
+        @include gridBox(2);
+        gap: 30px;
+
+        .gridBox {
+            @include gridBox(2);
+            margin-top: 50px;
+
+            // align-items: center;
+            .image {
+                img {
+                    height: auto;
+                    max-width: 100%;
+                }
+            }
+
+            .content {
+                padding: 0 30px;
+
+                h4 {
+                    font-size: 20px;
+                    color: #323b43;
+                    padding-bottom: 5px;
+                }
+
+                .position {
+                    display: block;
+                    padding-bottom: 25px;
+                    color: gray;
+                }
+
+                table {
+                    tr {
+                        td {
+                            color: gray;
+                            padding: 7px 0;
+
+                            &:last-child {
+                                padding-left: 10px;
+                            }
+
+                            .fas {
+                                color: #000;
+                            }
+
+                            &.far {
+                                color: #000;
+                            }
+                        }
+                    }
+                }
+                .social{
+                    display: flex;
+                    gap: 10px;
+                    padding-top: 55px;
+                    span{
+                        height:30px;
+                        width: 30px;
+                        color: #fff;
+                        display: grid;
+                        place-content: center;
+                        font-size: 13px;
+                        background-color: #3b5998;
+                        &.fa-twitter{
+                            background-color: #1da1f2;
+                        }
+                        &.fa-pinterest{
+                            background-color: #bd081c;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,140 @@
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }   
+    header{   
+        .navbar{
+            margin: unset;
+            .menu-bar{
+                .menu{
+                    position: unset;
+                    flex-direction: row;
+                    align-items: center !important;
+                    padding: unset;
+                    top: unset;
+                    left:  unset;
+                    right: unset;
+                    background: unset;
+                    gap: 10px !important;
+                    box-shadow: unset;
+                    display: flex !important;                    
+                }
+                .menu-icon{
+                    display:none;
+                }
+            }
+        }
+    }  
+    .request-callback-courses {
+        .gridBoxs {
+            grid-template-columns: repeat(2,2fr) !important; 
+            gap: 80px !important;
+        }
+    }
+    .blogSec {
+        .postGrid {
+            padding:80px 0 0 0 !important;
+            grid-template-columns: repeat(2,1fr) !important;
+        }
+    }
+    .our-stats{
+        grid-template-columns: repeat(2,1fr) !important;
+        .left-side{
+            padding: 15em 4em !important;
+        }
+        .right-side{
+            padding:0 4em !important;
+        }
+    }
+    .our-client{
+        .desc{
+            width: 54% !important;
+        }
+        .client-boxes{
+            .client-box{
+                .content{
+                    flex-direction: unset !important;
+                    padding:0 25px !important;
+                    gap: 20px !important;
+                }
+            }
+        }
+    }
+    .early-contact-Sec{
+        grid-template-columns: 1fr 1fr!important;
+        padding-left: 0px !important;
+        .right-side{
+            justify-content: right !important;
+        }
+    }
+    /*
+    ================================================================
+    About -us
+    ================================================================
+    */   
+    .what-we-offer{
+        grid-template-columns: repeat(2,1fr) !important;
+        .left-side{
+            padding: 15em 4em !important;
+        }
+        .right-side{
+            padding:0 4em !important;
+        }
+    }
+    .expert-team{
+        .GridBoxes{
+            grid-template-columns: 1fr 1fr !important;
+        } 
+    }    
+    /*------------------------------------------------------*/
+    // Gallery Page
+    .gallery-GridBoxes{
+        grid-template-columns: repeat(3 , 1fr) !important; 
+    }
+    /* Timeline ==================*/
+    .timeline-sec{
+        .timeline{
+            width: 860px !important;
+            .left{
+                width:400px !important;
+            }
+            .right{
+                width:400px !important;
+            }
+        }
+    } 
+
+     /*Blog Page*/
+     .blogs-sec{
+        .row{
+            border: unset !important;
+            margin: unset !important;
+            display: grid !important;
+            flex-direction: unset;
+            &.reverse{
+                flex-direction: column-reverse;
+            }
+            img{
+                vertical-align: middle;
+            }
+        }
+    }
+
+    /*Blog Detail Page*/
+    .blog-detail-page{
+        .blog-detail{
+            width:70%;
+            .comment{
+                &.comment2{
+                    margin-left: 50px !important;
+                }
+                &.comment3{
+                    margin-left: 100px !important;
+                }
+            }
+        }
+        .form{
+            width: 70%;
+        }
+    }
+}

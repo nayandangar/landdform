@@ -1,0 +1,27 @@
+.portfolio-sec {
+  padding: 100px 0;
+}
+.portfolio-sec .portfolio .row-2-col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+}
+.portfolio-sec .portfolio .row-2-col.mt-0 {
+  margin-top: 0px;
+}
+.portfolio-sec .portfolio .row-3-col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+}
+.portfolio-sec .portfolio .gridBox {
+  border-radius: 7px;
+}
+.portfolio-sec .portfolio .gridBox img {
+  border-radius: 7px;
+}
+.portfolio-sec .portfolio .hr-line {
+  transform: translateX(-500px) !important;
+}/*# sourceMappingURL=portfolio.css.map */

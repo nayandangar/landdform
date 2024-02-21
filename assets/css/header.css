@@ -1,0 +1,73 @@
+header {
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
+}
+header .navbar {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+header .navbar .logo {
+  font-size: 26px;
+  font-weight: 700;
+}
+header .navbar .logo a {
+  color: green;
+}
+header .navbar .menu-bar {
+  display: flex;
+  align-items: center;
+}
+header .navbar .menu-bar .menu {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+header .navbar .menu-bar .menu li {
+  position: relative;
+  padding: 15px 10px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+}
+header .navbar .menu-bar .menu li.active a {
+  color: green;
+}
+header .navbar .menu-bar .menu li a {
+  color: black;
+}
+header .navbar .menu-bar .menu li .submenu {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background: #fff;
+  display: none;
+  width: 150px;
+  box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.1);
+}
+header .navbar .menu-bar .menu li .submenu li {
+  padding: 10px;
+  border-bottom: 1px solid #d7cdcd;
+}
+header .navbar .menu-bar .menu li .submenu::before {
+  content: "";
+  height: 15px;
+  width: 15px;
+  transform: translateX(-50%) translateY(-3px) rotateZ(314deg);
+  background-color: #fff;
+  position: absolute;
+  top: -6px;
+  left: 25px;
+  border-top: 1px solid #EAEDF2;
+  border-right: 1px solid #EAEDF2;
+}
+header .navbar .menu-bar .menu li:hover .submenu {
+  display: unset;
+}
+header .navbar .menu-bar .menu li.menu-icon {
+  display: none;
+}/*# sourceMappingURL=header.css.map */

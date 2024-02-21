@@ -1,0 +1,35 @@
+@import '../mixin';
+.our-servieces_sec{
+    padding: 100px 0;
+    .gridBoxes{
+        @include gridBox(2);
+        gap: 20px;
+        .gridBox{
+            text-align: center;
+            padding: 60px 50px;
+            border: 2px solid #dcefdc;
+            .icon{
+                font-size: 35px;
+                color: #2A7D2E;
+                padding-bottom: 20px;
+            }
+            .title{
+                color: #323b43;
+                font-size: 22px;
+            }
+            .desc{
+                line-height: 30px;
+                color: gray;
+                padding-top: 15px;
+            }
+            &:hover{
+                border-color: #2A7D2E;
+                transition: 0.5s ease;
+                .title{
+                    color: #2A7D2E;
+                    transition: 0.5s ease;
+                }
+            }
+        }
+    }
+}

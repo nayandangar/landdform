@@ -1,0 +1,155 @@
+/* Font Awesome */
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css);
+/* Bootstrap */
+/*media Queries files*/
+@import url(./media/common-media.css);
+@import url(./media/max-576.css);
+@import url(./media/min-576.css);
+@import url(./media/min-768.css);
+@import url(./media/min-992.css);
+@import url(./media/min-1200.css);
+@import url(./header.css);
+/* header */
+@import url(./footer.css);
+/* Footer */
+/*Pages*/
+@import url(./pages/home.css);
+/* Home */
+@import url(./pages/about.css);
+/* Home */
+@import url(./pages/services.css);
+/* Services */
+@import url(./pages/gallery.css);
+/* gallery */
+@import url(./pages/portfolio.css);
+/* portfolio */
+@import url(./pages/our-timeline.css);
+/* our timeline */
+@import url(./pages/blogs.css);
+/* Blog */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h4.heading {
+  font-size: 45px;
+  color: #323b43;
+}
+h4.heading .sub-heading {
+  font-size: 18px;
+  color: #3A8041;
+  display: block;
+}
+
+.page-title {
+  padding: 100px 0;
+  background-image: url(../images/page-banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.page-title::before {
+  content: "";
+  background-color: #000;
+  opacity: 0.6;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
+.page-title h1 {
+  color: #fff;
+  font-size: 40px;
+}
+
+.image-overlap-1 {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.image-overlap-1 img {
+  height: auto;
+  vertical-align: middle;
+  transition: 0.5s ease;
+  width: calc(100% + 20px);
+  margin-left: -20px;
+}
+.image-overlap-1 .content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  color: #fff;
+  gap: 20px 0;
+  overflow: hidden;
+  z-index: 3;
+}
+.image-overlap-1 .content h5 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.image-overlap-1 .content .hr-line {
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  transform: translateX(-400px);
+  transition: 0.5s ease;
+}
+.image-overlap-1 .content .desc {
+  transform: translateX(400px);
+  transition: 0.5s ease;
+}
+.image-overlap-1::before {
+  content: "";
+  background-color: #2a7d2e;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.image-overlap-1:hover::before {
+  opacity: 0.6;
+}
+.image-overlap-1:hover .hr-line {
+  transform: translateX(0px) !important;
+}
+.image-overlap-1:hover .desc {
+  transform: translateX(0px);
+}
+.image-overlap-1:hover img {
+  transform: translateX(10px);
+}/*# sourceMappingURL=style.css.map */

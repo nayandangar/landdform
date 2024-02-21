@@ -1,0 +1,395 @@
+@import '../mixin';
+@media (max-width: 576px) {
+    .container {
+        padding: 0px !important;
+        max-width: 100%;
+
+    }
+
+    h4.heading {
+        .sub-heading {
+            font-size: 16px !important;
+        }
+
+        font-size: 26px !important;
+    }
+
+    header {
+
+        .navbar {
+            margin: 0 10px;
+
+            .menu-bar {
+                .menu {
+                    position: absolute;
+                    flex-direction: column;
+                    align-items: baseline !important;
+                    padding: 10px;
+                    top: 66px;
+                    left: 0;
+                    right: 0;
+                    background: #ffff;
+                    gap: 20px 0 !important;
+                    box-shadow: 0 0 10px 1px #cac0c075;
+                    display: none !important;
+                }
+            }
+        }
+    }
+
+    .carousel {
+        min-height: 340px !important;
+
+        .slide {
+            min-height: 340px !important;
+            padding-bottom: 15px !important;
+        }
+
+        .sub-head {
+            padding-bottom: 20px !important;
+        }
+
+        .heading {
+            font-size: 32px !important;
+        }
+
+        .carousel-btn-grid {
+            gap: 10px !important;
+
+            .carousel-btn {
+                padding: 10px 0 !important;
+
+                span {
+                    font-size: 16px !important;
+                }
+            }
+        }
+    }
+
+    .image-content-gridBox {
+        grid-template-columns: 1fr !important;
+        padding: 10px !important;
+
+        .desc {
+            line-height: 20px !important;
+            font-size: 14px !important;
+        }
+    }
+
+    .about-our-landform {
+        .menu-content {
+            margin-top: 30px;
+
+            .item {
+                flex-direction: column-reverse;
+
+                .content {
+                    h2 {
+                        font-size: 10vmin !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .ask-your-self {
+        .gridBoxs {
+            grid-template-columns: 1fr !important;
+        }
+    }
+
+    .request-callback-courses {
+        .gridBoxs {
+            grid-template-columns: 1fr !important;
+            gap: 0 !important;
+        }
+    }
+
+    .blogSec {
+        .postGrid {
+            padding: 40px 20px 0 20px !important;
+            grid-template-columns: 1fr !important;
+        }
+    }
+
+    .our-stats {
+        grid-template-columns: 1fr !important;
+
+        .left-side {
+            padding: 4em 4em !important;
+
+            h5 {
+                font-size: 20px !important;
+            }
+
+            h2 {
+                font-size: 30px !important;
+            }
+        }
+
+        .right-side {
+            padding: 20px !important;
+        }
+    }
+
+    .pricingSec {
+        .pricing-plans {
+            grid-template-columns: 1fr !important;
+            gap: 30px;
+        }
+    }
+
+    .our-client {
+        .desc {
+            width: unset !important;
+        }
+
+        .client-boxes {
+            .client-box {
+                .content {
+                    flex-direction: column;
+                    padding: 5px !important;
+                    gap: 10px !important;
+                }
+            }
+        }
+    }
+
+    .early-contact-Sec {
+        grid-template-columns: 1fr !important;
+        padding-right: 20px !important;
+        padding-left: 20px !important;
+
+        .right-side {
+            justify-content: left !important;
+        }
+    }
+
+    /*
+    ================================================================
+    About -us
+    ================================================================
+    */
+    .about-us {
+        .desc {
+            width: 80% !important;
+        }
+
+        .gridBoxs {
+            grid-template-columns: 1fr !important;
+
+            .gridBox {
+                .content {
+                    h3 {
+                        font-size: 25px !important;
+                    }
+
+                    p {
+                        font-size: 15px !important;
+                        line-height: 20px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .what-we-offer {
+        grid-template-columns: 1fr !important;
+
+        .left-side {
+            padding: 50px 20px !important;
+
+            h5 {
+                font-size: 20px !important;
+            }
+
+            h2 {
+                font-size: 30px !important;
+            }
+        }
+
+        .right-side {
+            padding: 20px !important;
+
+            .gridBoxs {
+                grid-template-columns: 1fr !important;
+            }
+        }
+    }
+
+    .expert-team {
+        padding: 50px 20px !important;
+
+        .GridBoxes {
+            grid-template-columns: 1fr !important;
+        }
+    }
+
+    /*
+    ================================================================
+    Services
+    ================================================================
+    */
+    .our-servieces {
+        padding: 50px 20px !important;
+
+        .gridBoxes {
+            grid-template-columns: 1fr !important;
+
+            .gridBox {
+                padding: 20px !important;
+            }
+        }
+    }
+
+    /*------------------------------------------------------*/
+    // Gallery Page
+    .gallery-GridBoxes {
+        grid-template-columns: repeat(1, 1fr) !important;
+        padding: 0 20px !important;
+    }
+
+    .portfolio {
+        padding: 0 20px !important;
+
+        .row-2-col {
+            grid-template-columns: repeat(1, 1fr) !important;
+
+            img {
+                max-height: auto !important;
+            }
+        }
+
+        .row-3-col {
+            grid-template-columns: repeat(1, 1fr) !important;
+
+            img {
+                max-height: auto !important;
+            }
+        }
+    }
+
+
+    /*Timeline Page*/
+    .timeline-sec {
+        .timeline {
+            li {
+                .block {
+                    margin-left: 0px !important;
+                }
+
+                .desc {
+                    text-align: center;
+                    background-color: #F5F5F5;
+                    padding: 15px;
+                }
+            }
+
+            width: 100% !important;
+
+            .left {
+                width: 100% !important;
+
+                .flag {
+                    flex-direction: column !important;
+
+                    h4 {
+                        &::after {
+                            top: -4px !important;
+                            right: calc(50% - 11px) !important;
+                        }
+                    }
+                }
+
+                &:before {
+                    left: calc(50% - 10px) !important;
+                    top: -35px !important;
+                    margin-left: 0 !important;
+                }
+            }
+
+            .right {
+                width: 100% !important;
+
+                .flag {
+                    flex-direction: column !important;
+
+                    h4 {
+                        &::before {
+                            top: -4px !important;
+                            left: calc(50% - 8px) !important;
+                        }
+                    }
+                }
+
+                &:before {
+                    left: calc(50% - 10px) !important;
+                    top: -35px !important;
+                    margin-left: 0 !important;
+                }
+            }
+        }
+    }
+
+
+    /* 404 page*/
+    .error_404 {
+        h1 {
+            font-size: 100px;
+        }
+        p{
+            margin-bottom: 10px;
+        }
+        form{
+            width: 100%;
+            height: 40px;
+            button{
+                padding: 0 20px ;
+            }
+        }
+        .back-to-home{
+            margin-top: 20px;
+        }
+    }
+
+
+    /*Blog Page*/
+    .blogs-sec{
+        .row{
+            border: 1px solid gray;
+            margin: 10px;
+            display: flex !important;
+            flex-direction: column;
+            &.reverse{
+                flex-direction: column-reverse;
+            }
+            img{
+                vertical-align: middle;
+            }
+        }
+    }
+
+     /*Blog Detail Page*/
+     .blog-detail-page{
+        .blog-detail{
+            width: 90%;
+            .comment{
+                gap: 20px 20px !important;
+                margin-bottom: 50px;
+                flex-direction: column;
+                .comment-line{
+                    line-height: 1.3 !important;
+                }
+                &.comment2{
+                    margin-left: 0px !important;
+                }
+                &.comment3{
+                    margin-left: 0px !important;
+                }
+            }
+        }
+        .form{
+            width: 90%;
+        }
+    }
+}

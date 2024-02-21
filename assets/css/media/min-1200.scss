@@ -1,0 +1,23 @@
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }      
+    .ask-your-self{
+        .gridBoxs{
+            grid-template-columns: repeat(4, 2fr) !important;
+        }
+    } 
+    /*
+    ================================================================
+    About -us
+    ================================================================
+    */    
+    .about-us{
+        .desc{
+            width: 80% !important;
+        }   
+        .gridBoxs{
+            grid-template-columns: 1fr 1fr !important;
+        }
+    }  
+}

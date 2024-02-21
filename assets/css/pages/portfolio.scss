@@ -1,0 +1,31 @@
+@import '../mixin';
+
+.portfolio-sec {
+    padding: 100px 0;
+
+    .portfolio {
+        .row-2-col {
+            &.mt-0{
+                margin-top: 0px;
+            }
+            @include gridBox(2);
+            gap: 30px;
+            margin-top: 30px
+        }
+
+        .row-3-col {
+            @include gridBox(3);
+            gap: 30px;
+            margin-top: 30px
+        }
+        .gridBox{
+            border-radius: 7px;
+            img{
+                border-radius: 7px;
+            }
+        }
+        .hr-line{
+            transform: translateX(-500px) !important;
+        }
+    }
+}

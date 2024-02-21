@@ -1,0 +1,35 @@
+.our-servieces_sec {
+  padding: 100px 0;
+}
+.our-servieces_sec .gridBoxes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.our-servieces_sec .gridBoxes .gridBox {
+  text-align: center;
+  padding: 60px 50px;
+  border: 2px solid #dcefdc;
+}
+.our-servieces_sec .gridBoxes .gridBox .icon {
+  font-size: 35px;
+  color: #2A7D2E;
+  padding-bottom: 20px;
+}
+.our-servieces_sec .gridBoxes .gridBox .title {
+  color: #323b43;
+  font-size: 22px;
+}
+.our-servieces_sec .gridBoxes .gridBox .desc {
+  line-height: 30px;
+  color: gray;
+  padding-top: 15px;
+}
+.our-servieces_sec .gridBoxes .gridBox:hover {
+  border-color: #2A7D2E;
+  transition: 0.5s ease;
+}
+.our-servieces_sec .gridBoxes .gridBox:hover .title {
+  color: #2A7D2E;
+  transition: 0.5s ease;
+}/*# sourceMappingURL=services.css.map */
